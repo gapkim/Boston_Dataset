@@ -4,4 +4,4 @@ The performance of four selections methods, Best subsets, Ridge regression, Lass
 
 ## File Description
 Project1.html : Project report file (html) <br>
-Project.Rmd : R code script
+Project.R : R code script
