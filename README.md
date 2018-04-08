@@ -7,4 +7,4 @@ Project1.pdf : Project report file (PDF) <br>
 Project.R : R code script
 
 You can view the report in HTML by
-[clicking here](http://htmlpreview.github.com/?https://github.com/gapkim/Boston_Dataset/blob/master/Project1.html)
+[clicking here](http://htmlpreview.github.com/?https://github.com/gapkim/Boston_Dataset/blob/master/Project1.html).
