@@ -60,7 +60,7 @@ ggplot(data=mydata) +
 
 # Table 2: Summary statistics of 'crim'
 
-table2 = summary(mydata[which.names("crim", colnames(mydata))])
+table2 = as.matrix(round(summary(mydata$crim),2))
 
 kable(table2, col.names="",
       caption="Table 2: Summary statistics of 'crim'",
@@ -102,11 +102,11 @@ grid.arrange(mplot[[1]], mplot[[2]], mplot[[3]], mplot[[4]], mplot[[5]],
 
 mydata3 = mydata2
 mydata3$exp.black = exp(10*mydata3$black / max(mydata3$black)) / 100
-#mydata3$exp.black = (mydata3$black / max(mydata3$black))^6
-mydata3 = mydata3[-which.names("black", colnames(mydata3))]
+mydata3 = subset(mydata3, select=-black)
 
 ggplot(data=mydata3) +
    geom_point(aes(x=exp.black, y=log.crim))
+
 
 ########################################
 ### Full Model with Original Variables
